@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>معركة العقول</title>
+        <link rel="icon" href="logo.svg">
+        <link rel="stylesheet" href="game.css">
+        <link rel="stylesheet" href="all.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-p1A9B6...etc..." crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <audio id="timer-sound">
+            <source type="audio/mp3" src="sounds/timer/timer.mp3">
+            <source type="audio/mpeg" src="sounds/timer/timer.mpeg">
+            <source type="audio/ogg" src="sounds/timer/timer.ogg">
+            <source type="audio/wav" src="sounds/timer/timer.wav">
+        </audio>
+        <audio id="correct-sound">
+            <source type="audio/mp3" src="sounds/correct/correct.mp3">
+            <source type="audio/mpeg" src="sounds/correct/correct.mpeg">
+            <source type="audio/wav" src="sounds/correct/correct.wav">
+        </audio>
+        <audio id="false-sound">
+            <source type="audio/mp3" src="sounds/false/false.mp3">
+            <source type="audio/mpeg" src="sounds/false/false.mpeg">
+        </audio>
+        <div class="container">
+
+            <div class="home-page">
+                <div class="team-one">
+                    <input type="text" placeholder="ادخل اسم الفريق الأول">
+                </div>
+                <div class="center">
+                    <img src="logo.svg" alt="logo">
+                    <input id="q-target" type="number"
+                        placeholder="عدد الأسئلة لكل فريق">
+                </div>
+                <div class="team-two">
+                    <input type="text" placeholder="ادخل اسم الفريق الثاني">
+                </div>
+                <button><i class="fa-solid fa-angles-right"></i>التالي<i
+                        class="fa-solid fa-angles-left"></i></button>
+            </div>
+
+            <div class="choose-category-page">
+                <div class="categories">
+
+                </div>
+                <footer>
+                    <button>إبدأ اللعب</button>
+                </footer>
+                <div class="erorr">يجب اختيار فئات اللعب !</div>
+            </div>
+
+            <div class="environment-page">
+                <aside>
+                    <header>
+                        <img src="logo.svg" alt="logo">
+                        <span>معركة العقول</span>
+                    </header>
+                    <div class="team-one active">
+                        <h1></h1>
+                        <span></span>
+                        <h2></h2>
+                    </div>
+                    <div class="team-two">
+                        <h1></h1>
+                        <span></span>
+                        <h2></h2>
+                    </div>
+                </aside>
+                <section>
+                    <div class="play-home">
+                        <header>
+                            <img src="logo.svg" alt>
+                            <span>اختر مستوى صعوبة السؤال</span>
+                            <img src="logo.svg" alt>
+                        </header>
+                        <div class="choose-q">
+                            <button id="easy">100</button>
+                            <button id="normal">200</button>
+                            <button id="hard">300</button>
+                            <button id="very-hard">400</button>
+                        </div>
+                    </div>
+                    <div class="q-page">
+                        <div class="timer">30</div>
+                        <div class="question">
+                            <p></p>
+                        </div>
+                        <div class="options">
+
+                        </div>
+                    </div>
+                    <div class="end-time">
+                        <i class="fa-solid fa-alarm-clock"></i>
+                        <span>انتهى الوقت !</span>
+                        <i class="fa-solid fa-alarm-clock"></i>
+                    </div>
+                </section>
+            </div>
+
+            <div class="winning-page">
+                <p></p>
+                <h1></h1>
+                <h2></h2>
+                <h3>قم بإعادة تحميل الصفحة للعب مرة أخرى</h3>
+            </div>
+
+        </div>
+    </body>
+    <script src="categories.js"></script>
+    <script src="game.js"></script>
+</html>
