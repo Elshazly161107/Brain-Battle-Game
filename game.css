@@ -435,23 +435,16 @@ body .container .environment-page {
     justify-content: center;
     gap: 15px;
     color: var(--text-light-gray);
-    height: 100%;
 }
 
 @media (max-width: 1100px) {
     .environment-page aside>* {
-        flex-grow: 1;
+        height: 100%;
     }
 }
 
 .environment-page aside>div.active {
     flex-grow: 1;
-}
-
-@media (max-width: 1100px) {
-    .environment-page aside>div.active {
-        flex-grow: 0;
-    }
 }
 
 .environment-page aside .team-one {
@@ -489,6 +482,7 @@ body .container .environment-page {
 @media (max-width: 1100px) {
     .environment-page aside header {
         justify-content: center;
+        width: fit-content;
     }
 }
 
@@ -571,6 +565,12 @@ body .container .environment-page {
     gap: 10px;
 }
 
+@media (max-width: 1100px) {
+    .environment-page section .play-home .choose-q {
+        width: 100%;
+    }
+}
+
 .environment-page section .play-home .choose-q button {
     padding: 10px;
     color: var(--text-light-gray);
@@ -583,11 +583,24 @@ body .container .environment-page {
     transition: 0.3s;
 }
 
+@media (max-width: 1100px) {
+    .environment-page section .play-home .choose-q button {
+        width: 90%;
+        background: var(--text-dark);
+    }
+}
+
 .environment-page section .play-home .choose-q button:hover {
     color: var(--text-dark);
     border: 2px solid var(--text-dark);
     background: var(--text-light-gray);
     width: 500px;
+}
+
+@media (max-width: 1100px) {
+    .environment-page section .play-home .choose-q button:hover {
+        width: 90%;
+    }
 }
 
 .environment-page section .q-page {
